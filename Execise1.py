@@ -7,10 +7,10 @@ size = int(input('Введите размер списка: '))
 my_list = []
 for i in range(size):
     my_list.append(random.randint(0, 10))
-print(my_list)
+print(f'Имеется список: {my_list}')
 
 sumElWithOddIndexes = 0
 for i in range(1, size, 2):
     sumElWithOddIndexes += my_list[i]
-print(sumElWithOddIndexes)
+print(f'Сумма элементов списка с нечетными индексами равна {sumElWithOddIndexes}')
 
